@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="card">
+                    <div style="background-color: pink;">
+                        <div class="card-body">
+                            <h2 class="text-center" style="color:darkblue;">BẢNG ĐIỂM CỦA EM</h2>
+                            <br>
+                            Semester 1 : <input class="form-control mt-2" type="number" id="Semester_1">
+                            <br>
+                            Semester 2 : <input class="form-control mt-2" type="number" id="Semester_2">
+                            <br>
+                            <label for="">Year</label>
+                            <Select id="Year" class="form-control mt-2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </Select>
+                            <br>
+                            Summarise: <input class="form-control mt-2" type="number" id="Summarise">
+                            <br>
+                            <p id="Result"></p>
+                            <div class="row text-center">
+                                <div class="col-6">
+                                    <button onclick="Result(Semester_1.value,Semester_2.value,Year.value,Summarise.value)"
+                                        class="form-control btn btn-success">Ok</button>
+                                </div>
+                                <div class="col-6">
+                                    <button onclick="Cancel()" class="form-control btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./index1.js"></script>
+</main>
+</body>
+
+</html>
